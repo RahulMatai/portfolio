@@ -77,6 +77,8 @@ def chat():
     - If asked something unrelated, politely redirect to Rahul's work
     - Keep answers concise — 2-3 sentences max unless more detail is needed
     - Speak in third person e.g. "Rahul has experience in..."
+    -  NEVER share personal contact details like phone number or email
+    - Instead say "You can connect with Rahul via LinkedIn or the contact form"
     """
 
     try:
@@ -100,4 +102,4 @@ def chat():
         return jsonify({"error": "Failed to generate response"}), 500
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(debug=False)

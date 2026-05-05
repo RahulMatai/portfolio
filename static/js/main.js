@@ -8,13 +8,17 @@ function addMessage(text, isUser) {
     const msg = document.createElement('div');
     msg.className = `msg ${isUser ? 'msg-right' : ''}`;
     
-    msg.innerHTML = `
-        <div class="msg-avatar ${isUser ? 'avatar-user' : 'avatar-ai'}">
-            ${isUser ? 'U' : 'R'}
-        </div>
-        <div class="msg-bubble ${isUser ? 'bubble-user' : 'bubble-ai'}">
-            ${text}
-        </div>
+   msg.innerHTML = `
+    <div class="msg-avatar ${isUser ? 'avatar-user' : 'avatar-ai'}">
+        ${isUser ? 'U' : 'R'}
+    </div>
+    <div class="msg-bubble ${isUser ? 'bubble-user' : 'bubble-ai'}">
+        ${text.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
+              .replace(/\*(.*?)\*/g, '<em>$1</em>')
+              .replace(/\n/g, '<br>')
+              .replace(/•/g, '&bull;')}
+    </div>
+
     `;
     
     chatBody.appendChild(msg);
@@ -78,3 +82,8 @@ chatSend.addEventListener('click', sendMessage);
 chatInput.addEventListener('keypress', (e) => {
     if (e.key === 'Enter') sendMessage();
 });
+
+function askHint(btn) {
+    chatInput.value = btn.textContent;
+    sendMessage();
+}
