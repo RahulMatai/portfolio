@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rahul Matai — Portfolio</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <nav>
+    <div class="nav-logo">Rahul<span>.</span>dev</div>
+    <div class="nav-links">
+        <a href="#projects">Projects</a>
+        <a href="#blog">Blog</a>
+        <a href="#about">About</a>
+        <a href="#chat" class="nav-cta">Chat with me →</a>
+    </div>
+</nav>
+
+<section class="hero">
+    <div class="hero-left">
+        <div class="hero-tag">Available for hire</div>
+        <h1 class="hero-name">
+            <span class="line1">Building</span><br>
+            <span class="line2">AI-first</span><br>
+            <span class="line3">products.</span>
+        </h1>
+        <p class="hero-bio">
+            Software engineer shipping production-grade AI applications. 
+            10 projects in 10 days — documenting every lesson learned in public.
+        </p>
+        <div class="hero-actions">
+            <a href="#chat" class="btn-primary">💬 Chat with my Portfolio</a>
+            <a href="#projects" class="btn-secondary">View Projects</a>
+            <a href="https://linkedin.com/in/rahulsmatai" target="_blank" class="btn-linkedin">in LinkedIn</a>
+        </div>
+    </div>
+
+    <div class="hero-right" id="chat">
+        <div class="chat-card">
+            <div class="chat-header">
+                <div class="chat-dots">
+                    <span class="dot dot-r"></span>
+                    <span class="dot dot-y"></span>
+                    <span class="dot dot-g"></span>
+                </div>
+                <div class="chat-title">✦ Ask Rahul's AI anything</div>
+            </div>
+            <div class="chat-body" id="chatBody">
+                <div class="msg">
+                    <div class="msg-avatar avatar-ai">R</div>
+                    <div class="msg-bubble bubble-ai">
+                        Hi! I'm Rahul's AI assistant. Ask me anything about his experience, projects or skills 👋
+                    </div>
+                </div>
+            </div>
+            <div class="chat-input-area">
+                <input class="chat-input" id="chatInput" placeholder="Ask me anything about Rahul..." />
+                <button class="chat-send" id="chatSend">→</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>
