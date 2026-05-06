@@ -8,3 +8,4 @@ langchain-core==0.1.52
 faiss-cpu
 sentence-transformers
 pypdf
+gunicorn
