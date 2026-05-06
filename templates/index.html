@@ -19,16 +19,17 @@
 
 <section class="hero">
     <div class="hero-left">
-        <div class="hero-tag">Available for hire</div>
+        <div class="hero-tag">🟢 Open to work</div>
         <h1 class="hero-name">
-            <span class="line1">Building</span><br>
-            <span class="line2">AI-first</span><br>
-            <span class="line3">products.</span>
+        <span class="line1">Backend Engineer.</span><br>
+        <span class="line2">AI Enthusiast.</span><br>
+        <span class="line3">Always Building.</span>
         </h1>
         <p class="hero-bio">
-            Software engineer shipping production-grade AI applications. 
-            10 projects in 10 days — documenting every lesson learned in public.
-        </p>
+    Hey, I'm Rahul 👋 I build things, break them, and build better ones.
+    Python, AI/ML, Cloud-Native — from idea to production,
+    learning everything in public.
+</p>
         <div class="hero-actions">
             <a href="#chat" class="btn-primary">💬 Chat with my Portfolio</a>
             <a href="#projects" class="btn-secondary">View Projects</a>
@@ -67,6 +68,84 @@
         </div>
     </div>
 </section>
+
+<section id="projects">
+    <div class="section-label">10 Days · 10 Projects</div>
+    <div class="section-title">Things I've Built</div>
+    <div class="projects-grid" id="projectsGrid">
+        <!-- Projects loaded dynamically from projects.json -->
+    </div>
+</section>
+
+<section id="blog">
+    <div class="section-label">Learning in Public</div>
+    <div class="section-title">From the Blog</div>
+    <div class="blog-grid" id="blogGrid">
+        <!-- Blog posts loaded dynamically -->
+    </div>
+</section>
+
+<section id="about">
+    <div class="section-label">About Me</div>
+    <div class="about-grid">
+        <div class="about-left">
+            <div class="section-title">Engineer by trade.<br>Builder by <span style="color:var(--accent)">nature.</span></div>
+            <p class="about-bio">
+                I'm Rahul, a software engineer with 4+ years of experience building backend systems, 
+                cloud-native applications and AI-powered tools. Based in Vadodara, India.
+            </p>
+            <p class="about-bio">
+                Previously worked as a contractor in Dublin, Ireland. Did my Masters at 
+                University College Dublin. Now back home, building in public and exploring 
+                the edges of AI — one project at a time.
+            </p>
+            <div class="about-links">
+                <a href="https://linkedin.com/in/rahulsmatai" target="_blank" class="btn-linkedin">in LinkedIn</a>
+                <a href="https://github.com/RahulMatai" target="_blank" class="btn-secondary">⌥ GitHub</a>
+            </div>
+        </div>
+        <div class="about-right">
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <div class="skill-icon">🐍</div>
+                    <div class="skill-name">Python</div>
+                    <div class="skill-level">Advanced</div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">🤖</div>
+                    <div class="skill-name">AI / LLMs</div>
+                    <div class="skill-level">Intermediate</div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">☁️</div>
+                    <div class="skill-name">Cloud</div>
+                    <div class="skill-level">AWS · Azure · GCP</div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">🗄️</div>
+                    <div class="skill-name">Databases</div>
+                    <div class="skill-level">PostgreSQL · MongoDB</div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">⚡</div>
+                    <div class="skill-name">FastAPI · Flask</div>
+                    <div class="skill-level">Production</div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">🔗</div>
+                    <div class="skill-name">RAG · LangChain</div>
+                    <div class="skill-level">Building daily</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <div class="footer-left">Rahul<span>.</span>dev</div>
+    <div class="footer-center">Built with Love ❤️, flask and GROQ :)</div>
+    <div class="footer-right">India 🇮🇳</div>
+</footer>
 
     <script src="{{ url_for('static', filename='js/main.js') }}"></script>
 </body>

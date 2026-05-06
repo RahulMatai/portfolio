@@ -4,6 +4,7 @@ from flask import Flask, render_template, request, jsonify
 from groq import Groq
 from dotenv import load_dotenv
 from know_me_py import build_knowledge_base
+import json
 
 load_dotenv()
 
@@ -100,6 +101,38 @@ def chat():
     except Exception as e:
         logger.error(f"Groq API error: {e}")
         return jsonify({"error": "Failed to generate response"}), 500
+    
 
+
+@app.route("/projects")
+def get_projects():
+    """
+    Serves projects data from projects.json
+    This way updating projects only requires editing the JSON file
+    """
+    logger.info("Projects data requested")
+    try:
+        with open("projects.json", "r") as f:
+            data = json.load(f)
+        return jsonify(data)
+    except Exception as e:
+        logger.error(f"Failed to load projects: {e}")
+        return jsonify({"projects": []}), 500
+
+@app.route("/blogs")
+def get_blogs():
+    """
+    Serves blog posts from blogs.json
+    Add new posts by editing blogs.json only
+    """
+    logger.info("Blog data requested")
+    try:
+        with open("blogs.json", "r") as f:
+            data = json.load(f)
+        return jsonify(data)
+    except Exception as e:
+        logger.error(f"Failed to load blogs: {e}")
+        return jsonify({"blogs": []}), 500
+    
 if __name__ == "__main__":
-    app.run(host="0.0.0.0",debug=False)
+    app.run(debug=True)

@@ -1,0 +1,34 @@
+{
+  "projects": [
+    {
+      "day": "Day 01",
+      "name": "Court Judgement Summarizer",
+      "description": "Upload any Indian court PDF and get a structured AI summary with facts, issues and ratio decidendi.",
+      "tags": ["Groq AI", "Streamlit", "Supabase", "RAG"],
+      "live_url": "#",
+      "github_url": "#",
+      "color": "card-1",
+      "status": "live"
+    },
+    {
+      "day": "Day 02",
+      "name": "AI Job Application Agent",
+      "description": "RAG-powered agent that analyzes your resume, scores ATS compatibility and runs mock interviews.",
+      "tags": ["RAG", "LangChain", "FAISS", "Groq"],
+      "live_url": "#",
+      "github_url": "#",
+      "color": "card-2",
+      "status": "live"
+    },
+    {
+      "day": "Day 03",
+      "name": "Stock analysis application",
+      "description": "Building in public every day. Follow on LinkedIn for daily updates.",
+      "tags": ["Stay tuned"],
+      "live_url": "#",
+      "github_url": "https://linkedin.com/in/rahulsmatai",
+      "color": "card-3",
+      "status": "building"
+    }
+  ]
+}

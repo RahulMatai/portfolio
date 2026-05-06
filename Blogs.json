@@ -1,0 +1,25 @@
+{
+  "blogs": [
+    {
+      "date": "Day 1 · May 2026",
+      "title": "How RAG actually works — explained while building it",
+      "excerpt": "We built a court judgement summarizer and I finally understood why chunking and embeddings matter for real-world AI apps.",
+      "tag": "RAG",
+      "url": "#"
+    },
+    {
+      "date": "Day 1 · May 2026",
+      "title": "Why float is the enemy of money in your database",
+      "excerpt": "0.1 + 0.2 = 0.30000000000000004. Here's how integer paise storage saves you from financial bugs forever.",
+      "tag": "Engineering",
+      "url": "#"
+    },
+    {
+      "date": "Day 2 · May 2026",
+      "title": "Agentic AI vs regular AI — what's actually different?",
+      "excerpt": "Building the job agent taught me that agentic AI is just LLMs with tools and a loop. Here's the mental model.",
+      "tag": "AI",
+      "url": "#"
+    }
+  ]
+}
