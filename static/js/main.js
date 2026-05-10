@@ -142,7 +142,7 @@ async function loadProjects() {
 // Fetch and render blog posts dynamically
 async function loadBlogs() {
     try {
-        const response = await fetch('/Blogs');
+        const response = await fetch('/blogs');
         const data = await response.json();
         
         const grid = document.getElementById('blogGrid');
