@@ -31,7 +31,7 @@
       "status": "building"
     },
     {
-  "day": "Day 03",
+  "day": "Day 04",
   "name": "AI Job Alert Agent",
   "description": "LinkedIn job scraper with Groq AI scoring — finds relevant jobs in India and Ireland, scored against your profile automatically.",
   "tags": ["Groq AI", "Streamlit", "Supabase", "LinkedIn"],
