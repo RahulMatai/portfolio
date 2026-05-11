@@ -29,6 +29,16 @@
       "github_url": "https://linkedin.com/in/rahulsmatai",
       "color": "card-3",
       "status": "building"
+    },
+    {
+  "day": "Day 03",
+  "name": "AI Job Alert Agent",
+  "description": "LinkedIn job scraper with Groq AI scoring — finds relevant jobs in India and Ireland, scored against your profile automatically.",
+  "tags": ["Groq AI", "Streamlit", "Supabase", "LinkedIn"],
+  "live_url": "#",
+  "github_url": "https://github.com/RahulMatai/day3-job-alert-agent",
+  "color": "card-3",
+  "status": "live"  
     }
     
   ]
