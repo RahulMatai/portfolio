@@ -21,16 +21,6 @@
       "status": "live"
     },
     {
-      "day": "Day 03",
-      "name": "Stock analysis application",
-      "description": "Building in public every day. Follow on LinkedIn for daily updates.",
-      "tags": ["Stay tuned"],
-      "live_url": "#",
-      "github_url": "https://linkedin.com/in/rahulsmatai",
-      "color": "card-3",
-      "status": "building"
-    },
-    {
   "day": "Day 04",
   "name": "AI Job Alert Agent",
   "description": "LinkedIn job scraper with Groq AI scoring — finds relevant jobs in India and Ireland, scored against your profile automatically.",
